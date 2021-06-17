@@ -557,3 +557,25 @@ textarea.input100 {
   background: green;
   width: 100%;
 }
+
+.flash__error {
+  text-align: center;
+  border: 1px dotted;
+  padding: 10px;
+  background: red;
+  width: 100%;
+}
+.flash__notice {
+  text-align: center;
+  border: 1px dotted;
+  padding: 10px;
+  background: blue;
+  width: 100%;
+}
+.flash__success {
+  text-align: center;
+  border: 1px dotted;
+  padding: 10px;
+  background: green;
+  width: 100%;
+}
