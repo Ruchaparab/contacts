@@ -14,4 +14,7 @@ ActiveStorage.start()
 import "channels"
 import "jquery"
 
+import "packs/vendor/popper.min.js"
+import "packs/vendor/bootstrap.min.js"
+
 import "packs/contacts.js"
