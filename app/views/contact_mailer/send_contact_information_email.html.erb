@@ -1,0 +1,32 @@
+<div>
+    <p>Hey, you have received a message from <%=@contact.name%><p>
+
+    <div style="margin-top:5px;">
+        <div style="font-size:18px;font-weight:bold;">Contact details:</div>
+        <div style="margin-left: 20px;">    
+            <p>
+                <b>Name:</b> 
+                <%= @contact.name %>
+            </p>
+            <p>
+                <b>E-mail:</b> 
+                <%= @contact.email %>
+            </p>
+            <% if @contact.phone_number.present? %>
+                <p>
+                    <b>Contact:</b> 
+                    <%= @contact.phone_number %>
+                </p>
+            <% end %>
+        </div>
+    </div>
+
+    <div style="margin-top:5px;">
+        <div style="margin-left: 20px;">
+            <p>
+                <b>Message:</b> 
+                <%= @contact.message %>
+            </p>
+        </div>    
+    <div>
+</div>
