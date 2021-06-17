@@ -10,11 +10,10 @@ class ContactsController < ApplicationController
     if @contact.save
       ContactMailer.send_contact_information_email(@contact).deliver_later
       ResponseMailer.send_email_to_contact_person(@contact).deliver_later
-      flash[:success] = "Contact was successfully created."
+      flash[:success] = t('contacts.controller.create.success')
       redirect_to root_path
     else
-
-      flash[:error] = "something went wrong"
+      flash[:error] = t('contacts.controller.create.error')
       redirect_to root_path
     end
   end

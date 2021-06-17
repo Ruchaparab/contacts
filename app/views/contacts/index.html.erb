@@ -1,6 +1,10 @@
 <div class="container-contact100">
   <div class="wrap-contact100">
   
+  <div class="container">
+    <%= render 'change_language' %>
+  </div>
+  
   <%= render 'form', contact: @contact %>
 
     <div class="contact100-more flex-col-c-m" style="background-image: url(<%= image_path 'bg-01.jpg'%>);">
@@ -11,11 +15,11 @@
 
         <div class="flex-col size2">
           <span class="txt1 p-b-20">
-            Address
+            <%= t('contacts.details.address_text') %> 
           </span>
 
           <span class="txt2">
-            Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+            <%= t('contacts.details.address') %> 
           </span>
         </div>
       </div>
@@ -27,7 +31,7 @@
 
         <div class="flex-col size2">
           <span class="txt1 p-b-20">
-            Lets Talk
+            <%= t('contacts.details.contact_text') %> 
           </span>
 
           <span class="txt3">
@@ -43,7 +47,7 @@
 
         <div class="flex-col size2">
           <span class="txt1 p-b-20">
-            General Support
+            <%= t('contacts.details.support_text') %> 
           </span>
 
           <span class="txt3">

@@ -1,0 +1,30 @@
+de:
+  contacts:
+    details:
+      address_text: "Adresse"
+      address: "Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US"
+      contact_text: "Lass uns reden"
+      support_text: "Allgemeine Unterstützung"
+    forms:
+      labels:
+        title: "Schick uns eine Nachricht"
+        name: "Sagen Sie uns Ihren Namen *"
+        email: "GEBEN SIE IHRE E-MAIL ADRESSE EIN *"
+        phone: "TELEFONNUMMER EINGEBEN"
+        message: "BOTSCHAFT *"
+        button: "NACHRICHT SENDEN"
+      placeholders:
+        first_name: "Vorname"
+        last_name: "Nachname"
+        email: "Z.B. example@email.com"
+        phone: "Z.B. +1 800 000000"
+        message: "Schreiben Sie uns eine Nachricht"
+      validations:
+        first_name: "Vorname eingeben"
+        last_name: "Nachname eingeben"
+        email: "Gültige E-Mail erforderlich: ex@abc.xyz"
+        message: "Nachricht ist erforderlich"
+    controller:
+      create:
+        success: "Kontakt wurde erfolgreich erstellt."
+        error: "Etwas ist schief gelaufen. Bitte versuche es erneut."
