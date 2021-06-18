@@ -4,15 +4,15 @@ This project includes a form which recieves a contact information such as email,
 This Project is based on
 > Ruby version - 2.5.5\
 > Rails version - >= 6.1.3.2\
-> Database adapter - Postgresql
-> Testing - Rspec
-> Coverage - Simplecov
+> Database adapter - Postgresql\
+> Testing - Rspec\
+> Coverage - Simplecov\
 
 ## Setup 
->  bundle install
->  yarn install
->  rails db:create
->  rails db:migrate
+>  bundle install\
+>  yarn install\
+>  rails db:create\
+>  rails db:migrate\
 
 ## For test coverage 
 >  rspec spec (find the result in /coverage/index.html)
