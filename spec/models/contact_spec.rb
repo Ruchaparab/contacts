@@ -35,6 +35,16 @@ RSpec.describe Contact, type: :model do
       @contact.message = nil
       expect(@contact).to_not be_valid
     end
+
+    it 'accepts only valid email' do
+      @contact.email = 'johndoe@example.com'
+      expect(@contact).to be_valid
+    end
+
+    it 'rejects invalid format of email' do
+      @contact.email = 'abc.com'
+      expect(@contact).to_not be_valid
+    end
   end
 
   describe "name" do
