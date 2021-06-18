@@ -9,7 +9,6 @@ class ContactsController < ApplicationController
 
     if @contact.save
       ContactMailer.send_contact_information_email(@contact).deliver_later
-      ResponseMailer.send_email_to_contact_person(@contact).deliver_later
       flash[:success] = t('contacts.controller.create.success')
       redirect_to root_path
     else
