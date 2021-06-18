@@ -18,6 +18,13 @@ RSpec.describe "Contacts", type: :request do
       }
     }
 
+  describe "GET /new" do
+    it "renders a successful response" do
+      get new_contact_url
+      expect(response).to be_successful
+    end
+  end
+
   describe "POST /create" do
     context "with valid parameters" do
       it "creates a new Contact" do
