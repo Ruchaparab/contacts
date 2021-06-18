@@ -45,6 +45,16 @@ RSpec.describe Contact, type: :model do
       @contact.email = 'abc.com'
       expect(@contact).to_not be_valid
     end
+
+    it 'accepts only valid phone number' do
+      @contact.phone_number = '9899802428'
+      expect(@contact).to be_valid
+    end
+
+    it 'rejects alphabets in phone number' do
+      @contact.phone_number = 'tsjd'
+      expect(@contact).to_not be_valid
+    end
   end
 
   describe "name" do
